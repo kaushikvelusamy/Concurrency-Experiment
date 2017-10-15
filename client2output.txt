@@ -1,0 +1,276 @@
+Check the attached video
+
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ ./Client 9 localhost 8005 0.1 Transactions1.txtConnected to the Server
+Sent the Client Id from client to server : 9
+Total Number of Transactions to Process : 12
+
+Waiting time for each transaction : 0.1
+
+
+
+Sent from Client to Server: Total number of client Transactions
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 10 106 w 1
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shamir 	 Old balance : 6000 
+
+	 New Status sent from Server to Client: New balance : 5999$ 	 Withdrawn Amount : 1$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 20 106 w 1
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shamir 	 Old balance : 5999 
+
+	 New Status sent from Server to Client: New balance : 5998$ 	 Withdrawn Amount : 1$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 30 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4000 
+
+	 New Status sent from Server to Client: New balance : 4005$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 40 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4005 
+
+	 New Status sent from Server to Client: New balance : 4010$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 50 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4010 
+
+	 New Status sent from Server to Client: New balance : 4015$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 60 101 d 10
+ 
+	 Old Status Sent from Server to Client: 	 Name :John 	 Old balance : 1000 
+
+	 New Status sent from Server to Client: New balance : 1010$ 	 Deposited Amount : 10$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 70 103 w 15
+ 
+	 Old Status Sent from Server to Client: 	 Name: Singh 	 Old balance : 3000 
+
+	 New Status sent from Server to Client: New balance : 2985$ 	 Withdrawn Amount : 15$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 80 105 w 20
+ 
+	 Old Status Sent from Server to Client: 	 Name: Rivest 	 Old balance : 5000 
+
+	 New Status sent from Server to Client: New balance : 4980$ 	 Withdrawn Amount : 20$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 90 201 d 1000
+ 
+	 Old Status Sent from Server to Client: 	 Old Status: 	 Wrong Account Number
+
+	 New Status sent from Server to Client: 	 New Status: 	 Transaction Declined
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 100 104 w 1000000
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shenoy 	 Old balance : 4015 
+
+	 New Status sent from Server to Client: Transaction Declined: Insufficient balance. 
+		Your balance was 4015 and Withdraw Request is 1000000
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 110 102 d 100
+ 
+	 Old Status Sent from Server to Client: 	 Name :Tim 	 Old balance : 2000 
+
+	 New Status sent from Server to Client: New balance : 2100$ 	 Deposited Amount : 100$ 
+
+*********************
+
+
+All the Transactions are completed Successfully. Closing the client connection
+
+
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ ./Client 9 localhost 8005 0.1 Transactions1.txt
+Connected to the Server
+Sent the Client Id from client to server : 9
+Total Number of Transactions to Process : 12
+
+Waiting time for each transaction : 0.1
+
+
+
+Sent from Client to Server: Total number of client Transactions
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 10 106 w 1
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shamir 	 Old balance : 6000 
+
+	 New Status sent from Server to Client: New balance : 5999$ 	 Withdrawn Amount : 1$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 20 106 w 1
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shamir 	 Old balance : 5999 
+
+	 New Status sent from Server to Client: New balance : 5998$ 	 Withdrawn Amount : 1$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 30 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4000 
+
+	 New Status sent from Server to Client: New balance : 4005$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 40 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4010 
+
+	 New Status sent from Server to Client: New balance : 4015$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 50 104 d 5
+ 
+	 Old Status Sent from Server to Client: 	 Name :Shenoy 	 Old balance : 4015 
+
+	 New Status sent from Server to Client: New balance : 4020$ 	 Deposited Amount : 5$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 60 101 d 10
+ 
+	 Old Status Sent from Server to Client: 	 Name :John 	 Old balance : 1010 
+
+	 New Status sent from Server to Client: New balance : 1020$ 	 Deposited Amount : 10$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 70 103 w 15
+ 
+	 Old Status Sent from Server to Client: 	 Name: Singh 	 Old balance : 2985 
+
+	 New Status sent from Server to Client: New balance : 2970$ 	 Withdrawn Amount : 15$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 80 105 w 20
+ 
+	 Old Status Sent from Server to Client: 	 Name: Rivest 	 Old balance : 4980 
+
+	 New Status sent from Server to Client: New balance : 4960$ 	 Withdrawn Amount : 20$ 
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 90 201 d 1000
+ 
+	 Old Status Sent from Server to Client: 	 Old Status: 	 Wrong Account Number
+
+	 New Status sent from Server to Client: 	 New Status: 	 Transaction Declined
+
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 100 104 w 1000000
+ 
+	 Old Status Sent from Server to Client: 	 Name: Shenoy 	 Old balance : 4020 
+
+	 New Status sent from Server to Client: Transaction Declined: Insufficient balance. 
+		Your balance was 4020 and Withdraw Request is 1000000
+*********************
+Transaction line was sent to server from client 
+
+ACK:  From Server: Started Processing your transaction Mentioned Below
+
+Printing Transaction from client : 110 102 d 100
+ 
+	 Old Status Sent from Server to Client: 	 Name :Tim 	 Old balance : 2100 
+
+	 New Status sent from Server to Client: New balance : 2200$ 	 Deposited Amount : 100$ 
+
+*********************
+
+
+All the Transactions are completed Successfully. Closing the client connection
+
+
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ ./Client 9 localhost 8005 0.1 Transactions1.txt
+^C
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ 

@@ -1,0 +1,487 @@
+Check the Attached Video
+
+
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ clear
+
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ make clean
+rm Server Client
+kaushik@kaushik-VirtualBox:~/Dropbox/vm/os project/KaushikVelusamy-Osproject1$ make
+g++ -o Server server.cpp -std=c++11 -pthread
+g++ -o Client client.cpp
+./Server 8005 Records.txt
+
+
+Socket connection created successfully
+******Server Started******
+
+
+Waiting to Accept Incomming connections
+Established Connection to Client
+
+
+Total Number of lines in Records Database is 6
+Record 0	101	John	1000
+Record 1	102	Tim	2000
+Record 2	103	Singh	3000
+Record 3	104	Shenoy	4000
+Record 4	105	Rivest	5000
+Record 5	106	Shamir	6000
+The client ID is : 999
+
+
+From Server: Reading Transactions sent by Client
+
+
+
+From ClientID :999	Transaction  0		10 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 6000 
+ 
+	 New Status : New balance : 5999$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  1		20 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4000 
+ 
+	 New Status : New balance : 4005$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  2		30 101 d 10
+
+
+	 Old Status : 	 Name :John 	 Old balance : 1000 
+ 
+	 New Status : New balance : 1010$ 	 Deposited Amount : 10$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  3		40 103 w 15
+
+
+	 Old Status : 	 Name: Singh 	 Old balance : 3000 
+ 
+	 New Status : New balance : 2985$ 	 Withdrawn Amount : 15$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  4		50 105 w 20
+
+
+	 Old Status : 	 Name: Rivest 	 Old balance : 5000 
+ 
+	 New Status : New balance : 4980$ 	 Withdrawn Amount : 20$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  5		60 201 d 1000
+
+
+	 **Wrong account number and  Transaction declined** 
+********
+
+
+
+From ClientID :999	Transaction  6		70 104 w 1000000
+
+
+	 Old Status : 	 Name: Shenoy 	 Old balance : 4005 
+ 
+	 New Status : Transaction Declined: Insufficient balance. 
+		Your balance was 4005 and Withdraw Request is 1000000 
+********
+
+
+
+From ClientID :999	Transaction  7		80 102 d 100
+
+
+	 Old Status : 	 Name :Tim 	 Old balance : 2000 
+ 
+	 New Status : New balance : 2100$ 	 Deposited Amount : 100$ 
+ 
+********
+
+Established Connection to Client
+
+
+Total Number of lines in Records Database is 6
+Record 0	101	John	1000
+Record 1	102	Tim	2000
+Record 2	103	Singh	3000
+Record 3	104	Shenoy	4000
+Record 4	105	Rivest	5000
+Record 5	106	Shamir	6000
+The client ID is : 9
+
+
+From Server: Reading Transactions sent by Client
+
+
+
+From ClientID :9	Transaction  0		10 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 6000 
+ 
+	 New Status : New balance : 5999$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  1		20 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 5999 
+ 
+	 New Status : New balance : 5998$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  2		30 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4000 
+ 
+	 New Status : New balance : 4005$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  3		40 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4005 
+ 
+	 New Status : New balance : 4010$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  4		50 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4010 
+ 
+	 New Status : New balance : 4015$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  5		60 101 d 10
+
+
+	 Old Status : 	 Name :John 	 Old balance : 1000 
+ 
+	 New Status : New balance : 1010$ 	 Deposited Amount : 10$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  6		70 103 w 15
+
+
+	 Old Status : 	 Name: Singh 	 Old balance : 3000 
+ 
+	 New Status : New balance : 2985$ 	 Withdrawn Amount : 15$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  7		80 105 w 20
+
+
+	 Old Status : 	 Name: Rivest 	 Old balance : 5000 
+ 
+	 New Status : New balance : 4980$ 	 Withdrawn Amount : 20$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  8		90 201 d 1000
+
+
+	 **Wrong account number and  Transaction declined** 
+********
+
+
+
+From ClientID :9	Transaction  9		100 104 w 1000000
+
+
+	 Old Status : 	 Name: Shenoy 	 Old balance : 4015 
+ 
+	 New Status : Transaction Declined: Insufficient balance. 
+		Your balance was 4015 and Withdraw Request is 1000000 
+********
+
+
+
+From ClientID :9	Transaction  10		110 102 d 100
+
+
+	 Old Status : 	 Name :Tim 	 Old balance : 2000 
+ 
+	 New Status : New balance : 2100$ 	 Deposited Amount : 100$ 
+ 
+********
+
+Established Connection to Client
+
+
+Total Number of lines in Records Database is 6
+Record 0	101	John	1000
+Record 1	102	Tim	2000
+Record 2	103	Singh	3000
+Record 3	104	Shenoy	4000
+Record 4	105	Rivest	5000
+Record 5	106	Shamir	6000
+The client ID is : 9
+
+Established Connection to Client
+
+
+Total Number of lines in Records Database is 6
+Record 0	101	John	1000
+Record 1	102	Tim	2000
+Record 2	103	Singh	3000
+Record 3	104	Shenoy	4000
+Record 4	105	Rivest	5000
+Record 5	106	Shamir	6000
+The client ID is : 999
+
+
+From Server: Reading Transactions sent by Client
+
+
+
+From ClientID :9	Transaction  0		10 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 6000 
+ 
+	 New Status : New balance : 5999$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+From Server: Reading Transactions sent by Client
+
+
+
+From ClientID :9	Transaction  1		20 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 5999 
+ 
+	 New Status : New balance : 5998$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  0		10 106 w 1
+
+
+	 Old Status : 	 Name: Shamir 	 Old balance : 5998 
+ 
+	 New Status : New balance : 5997$ 	 Withdrawn Amount : 1$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  2		30 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4000 
+ 
+	 New Status : New balance : 4005$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  1		20 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4005 
+ 
+	 New Status : New balance : 4010$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  3		40 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4010 
+ 
+	 New Status : New balance : 4015$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  2		30 101 d 10
+
+
+	 Old Status : 	 Name :John 	 Old balance : 1000 
+ 
+	 New Status : New balance : 1010$ 	 Deposited Amount : 10$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  4		50 104 d 5
+
+
+	 Old Status : 	 Name :Shenoy 	 Old balance : 4015 
+ 
+	 New Status : New balance : 4020$ 	 Deposited Amount : 5$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  3		40 103 w 15
+
+
+	 Old Status : 	 Name: Singh 	 Old balance : 3000 
+ 
+	 New Status : New balance : 2985$ 	 Withdrawn Amount : 15$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  5		60 101 d 10
+
+
+	 Old Status : 	 Name :John 	 Old balance : 1010 
+ 
+	 New Status : New balance : 1020$ 	 Deposited Amount : 10$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  4		50 105 w 20
+
+
+	 Old Status : 	 Name: Rivest 	 Old balance : 5000 
+ 
+	 New Status : New balance : 4980$ 	 Withdrawn Amount : 20$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  6		70 103 w 15
+
+
+	 Old Status : 	 Name: Singh 	 Old balance : 2985 
+ 
+	 New Status : New balance : 2970$ 	 Withdrawn Amount : 15$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  5		60 201 d 1000
+
+
+	 **Wrong account number and  Transaction declined** 
+********
+
+
+
+From ClientID :9	Transaction  7		80 105 w 20
+
+
+	 Old Status : 	 Name: Rivest 	 Old balance : 4980 
+ 
+	 New Status : New balance : 4960$ 	 Withdrawn Amount : 20$ 
+ 
+********
+
+
+
+From ClientID :999	Transaction  6		70 104 w 1000000
+
+
+	 Old Status : 	 Name: Shenoy 	 Old balance : 4020 
+ 
+	 New Status : Transaction Declined: Insufficient balance. 
+		Your balance was 4020 and Withdraw Request is 1000000 
+********
+
+
+
+From ClientID :9	Transaction  8		90 201 d 1000
+
+
+	 **Wrong account number and  Transaction declined** 
+********
+
+
+
+From ClientID :999	Transaction  7		80 102 d 100
+
+
+	 Old Status : 	 Name :Tim 	 Old balance : 2000 
+ 
+	 New Status : New balance : 2100$ 	 Deposited Amount : 100$ 
+ 
+********
+
+
+
+From ClientID :9	Transaction  9		100 104 w 1000000
+
+
+	 Old Status : 	 Name: Shenoy 	 Old balance : 4020 
+ 
+	 New Status : Transaction Declined: Insufficient balance. 
+		Your balance was 4020 and Withdraw Request is 1000000 
+********
+
+
+
+From ClientID :9	Transaction  10		110 102 d 100
+
+
+	 Old Status : 	 Name :Tim 	 Old balance : 2100 
+ 
+	 New Status : New balance : 2200$ 	 Deposited Amount : 100$ 
+ 
+********
+
+^Cmakefile:21: recipe for target 'startingserver' failed
+make: *** [startingserver] Interrupt
+

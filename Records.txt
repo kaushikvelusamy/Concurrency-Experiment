@@ -1,0 +1,6 @@
+101 John 1000
+102 Tim 2000
+103 Singh 3000
+104 Shenoy 4000
+105 Rivest 5000
+106 Shamir 6000
